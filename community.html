@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Info 2 Herz und seele</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Herz und</h1>
+      <h2>Seele</h2>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+    <div class="mobile-menu">
+      <button class="menu-close" aria-label="Menü schließen">&times;</button>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Community Section -->
+    <section id="community" class="community">
+      <h2>Willkommen in der Community</h2>
+      <p>Hier kannst du dich mit anderen Spielern austauschen und Spaß haben!</p>
+      <div class="server-list">
+        <!-- Roblox RP Server -->
+        <div class="server-item">
+          <h3>Roblox RP</h3>
+          <p>Servername: Roblox Roleplay Universe</p>
+          <p>Beschreibung: Tauche ein in die Welt von Roblox RP und erlebe spannende Abenteuer mit anderen Spielern!</p>
+        </div>
+        <!-- GTA RP Server -->
+        <div class="server-item">
+          <h3>GTA RP</h3>
+          <p>Servername: Los Santos RP</p>
+          <p>Beschreibung: Erkunde Los Santos in GTA RP und werde Teil einer lebendigen Roleplay-Community!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      &copy; 2025 🎲 MarcelCTG // 🎮 GameZone HQ 🎧 | Alle Rechte vorbehalten |
+      <a href="Datenschutz.html">Datenschutz</a> |
+      <a href="rechtline.html">Nutzungsrichtlinien</a>
+    </p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuClose = document.querySelector('.menu-close');
+    menuToggle.onclick = () => mobileMenu.classList.add('open');
+    menuClose.onclick = () => mobileMenu.classList.remove('open');
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.onclick = () => mobileMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

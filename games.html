@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Info Herz und Seele</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Herz und</h1>
+      <h2>Seele</h2>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+    <div class="mobile-menu">
+      <button class="menu-close" aria-label="Menü schließen">&times;</button>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Games Section -->
+    <section id="games" class="games">
+      <h2>Unsere Spiele</h2>
+      <div class="games-list">
+        <!-- Minecraft Game Item -->
+        <div class="game-item">
+          <img src="mincraft.png" alt="Minecraft">
+          <div class="game-info">
+            <h3>Minecraft</h3>
+            <p>Minecraft ist ein Sandbox-Spiel, in dem du Blöcke platzierst, um deine eigene Welt zu erschaffen. Baue, erkunde und überlebe in einer grenzenlosen Welt voller Abenteuer!</p>
+          </div>
+        </div>
+        <!-- Roblox Game Item -->
+        <div class="game-item">
+          <img src="roblox.png" alt="Roblox">
+          <div class="game-info">
+            <h3>Roblox</h3>
+            <p>Roblox ist eine Plattform, auf der du eigene Spiele erstellen und Millionen von Spielen anderer Spieler entdecken kannst. Tauche ein in eine Welt voller Kreativität und Spaß!</p>
+          </div>
+        </div>
+        <!-- GTA Game Item -->
+        <div class="game-item">
+          <img src="gta.png" alt="GTA">
+          <div class="game-info">
+            <h3>GTA</h3>
+            <p>Grand Theft Auto (GTA) ist ein Open-World-Spiel, in dem du Missionen abschließen, Fahrzeuge stehlen und eine riesige Stadt erkunden kannst. Erlebe Action und Abenteuer in einer dynamischen Welt!</p>
+          </div>
+        </div>
+        <!-- Rainbow Six Game Item -->
+        <div class="game-item">
+          <img src="r6.png" alt="Rainbow Six">
+          <div class="game-info">
+            <h3>Rainbow Six</h3>
+            <p>Tom Clancy's Rainbow Six Siege ist ein taktischer Shooter, bei dem Teamarbeit und Strategie im Mittelpunkt stehen. Wähle deinen Operator und kämpfe in spannenden Multiplayer-Matches!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      &copy; 2025 🎲 MarcelCTG // 🎮 GameZone HQ 🎧 | Alle Rechte vorbehalten |
+      <a href="Datenschutz.html">Datenschutz</a> |
+      <a href="rechtline.html">Nutzungsrichtlinien</a>
+    </p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuClose = document.querySelector('.menu-close');
+    menuToggle.onclick = () => mobileMenu.classList.add('open');
+    menuClose.onclick = () => mobileMenu.classList.remove('open');
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.onclick = () => mobileMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

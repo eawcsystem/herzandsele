@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Discord-Regelwerk | Herz und Seele</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Herz und</h1>
+      <h2>Seele</h2>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+    <div class="mobile-menu">
+      <button class="menu-close" aria-label="Menü schließen">&times;</button>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Regeln</a></li>
+        <li><a href="games.html">Spiele</a></li>
+        <li><a href="contact.html">Roleplay (RP)</a></li>
+        <li><a href="https://discord.gg/2PFB9sXrHK" target="_blank">Discord</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Discord-Regelwerk Section -->
+    <section id="rules" class="rules">
+      <div class="content">
+        <h1>📜 DISCORD REGELWERK</h1>
+        <h2>🎲 MarcelCTG | 🎮 GameZone HQ 🎧</h2>
+        <div class="rule">
+          <h3>1. 🔒 Allgemeines Verhalten</h3>
+          <p><strong>Respekt & Höflichkeit:</strong> Sei freundlich zu anderen. Keine Beleidigungen, Mobbing, Rassismus, Sexismus oder Diskriminierung.</p>
+          <p><strong>Kein Spam:</strong> Vermeide Spam in Text- und Sprachkanälen (z. B. Emojis, Wiederholungen, Werbung).</p>
+          <p><strong>Streitigkeiten:</strong> Persönliche Konflikte gehören nicht auf den Server – klärt sie privat oder wendet euch an das Team.</p>
+        </div>
+        <div class="rule">
+          <h3>2. 📢 Kommunikation</h3>
+          <p><strong>Richtige Kanäle nutzen:</strong> Halte dich an die Themen der Kanäle.</p>
+          <p><strong>Sprache:</strong> Offizielle Sprache ist Deutsch (Englisch in internationalen Bereichen erlaubt, falls vorhanden).</p>
+          <p><strong>Voice-Chat-Verhalten:</strong> Kein Soundboard-Spam, keine Musikbots ohne Erlaubnis, kein Trollen im Voice.</p>
+        </div>
+        <div class="rule">
+          <h3>3. 🛡️ Sicherheit & Datenschutz</h3>
+          <p><strong>Keine privaten Daten posten:</strong> Das gilt auch für Fotos, Adressen, Telefonnummern etc.</p>
+          <p><strong>Keine illegalen Inhalte:</strong> Dazu zählen Cracks, Hacks, NSFW, Gewaltverherrlichung, etc.</p>
+        </div>
+        <div class="rule">
+          <h3>4. 🚫 Werbung & Eigenwerbung</h3>
+          <p><strong>Keine Eigenwerbung:</strong> Ohne Genehmigung vom Serverteam.</p>
+          <p><strong>Server-Werbung:</strong> Das Teilen von Einladungslinks ist verboten (außer in einem dafür vorgesehenen Kanal).</p>
+        </div>
+        <div class="rule">
+          <h3>5. 🎮 Gaming & Events</h3>
+          <p><strong>Fairplay ist Pflicht:</strong> Kein Cheating, Exploits oder gezieltes Trollen in Games.</p>
+          <p><strong>Events & Turniere:</strong> Lies dir die jeweiligen Event-Regeln genau durch. Wer sie bricht, wird ausgeschlossen.</p>
+        </div>
+        <div class="rule">
+          <h3>6. 👮‍♂️ Team & Moderation</h3>
+          <p><strong>Team-Anweisungen folgen:</strong> Den Moderatoren & Admins ist Folge zu leisten.</p>
+          <p><strong>Regelverstöße melden:</strong> Wenn du etwas beobachtest, melde es dem Team statt selbst zu handeln.</p>
+          <p><strong>Strafen:</strong> Je nach Schwere des Verstoßes kann es Verwarnungen, Kicks, Bans oder Mutes geben.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      &copy; 2025 🎲 MarcelCTG // 🎮 GameZone HQ 🎧 | Alle Rechte vorbehalten |
+      <a href="Datenschutz.html">Datenschutz</a> |
+      <a href="rechtline.html">Nutzungsrichtlinien</a>
+    </p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuClose = document.querySelector('.menu-close');
+    menuToggle.onclick = () => mobileMenu.classList.add('open');
+    menuClose.onclick = () => mobileMenu.classList.remove('open');
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.onclick = () => mobileMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
